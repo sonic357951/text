@@ -6,73 +6,70 @@
 	<title>Document</title>
 	<style type="text/css">
 
-		div{
+		.container{
 			width: 800px;
 			height: 600px;
-			position: absolute;
-			margin-left: 370px;
+			margin: 0 auto;
         }
-        header{
-            width: 700px;
-            height: 90px;
+        .header{
+            width: 100%;
+            height: 100px;
             background-color: orange;
-            margin: 5px auto;
+            margin-bottom: 5px;
         }
-        nav{
-        	width: 700px;
-        	height: 25px;
+        .nav{
+        	width: 100%;
+        	height: 50px;
         	background-color: deeppink;
-        	margin: 4px auto;
+        	margin-bottom: 5px ;
         }
-        aside{
-        	width: 200px;
-        	height: 300px;
+        .content{
+        	width: 100%;
+        	height: 350px;
+        }
+        .aside{
+        	width: 195px;
+        	height: 100%;
         	background-color: pink;
-        	margin: 2px 50px;
+        	margin-right: 5px;
         	float: left;
         }
-        article{
-        	width: 495px;
-        	height: 300px;
+        .article{
+        	width: 600px;
+        	height: 100%;
         	background-color: deepskyblue;
-        	margin: 2px -45px;
-        	float: left;
+        	float: right;
         }
-        section{
-		    width: 485px;	
-			height: 96px;
-			background-color: yellow; 
-			margin: 180px 5px ;
+        .section{
+		    position: relative;
+		    width:590px; 
+		    height:100px;
+		    top: 220px;
+		    left:5px;
+		    background-color: yellow;
 		}
-		footer{
-			clear: both;
-            width:700px;	
-			height:90px;
+		.footer{
+            width:100%;	
+			height:100px;
 			background-color:darkseagreen; 
-			margin:  auto;
+			margin-top: 5px;
 		}
 	
 	</style>
 </head>
 <body>
 		<center> <a href="../index.html">回首頁</a> </center>
-	<table border="2" align="center" width="3" rules="cols" >
-	<div>
-	<header>
-		header
-	</header>
-	<nav>
-		nav
-	</nav>
-	<aside>
-		aside
-	</aside>
-	<article>article
-		<section>secticle</section>
-	</article>
-    <footer>
-		footer
-	</footer>
-	</div>
+		<table border="2" align="center" width="3" rules="cols" >
+		<div class="container">
+		<div class="header">header</div>
+		<div class="nav">nav</div>
+		<div class="content">
+			<div class="aside">aside</div>
+			<div class="article">article
+			<div class="section">section</div>
+			</div>
+		</div>
+		<div class="footer">footer</div>	
+	</div>	
 </body>
 </html>
